@@ -1,0 +1,427 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: rgb(201, 3, 3);
+    --color2: rgb(133, 11, 11);
+    --color3: rgb(156, 148, 102);
+}
+body{
+    background-color:#eee;
+}
+/* navbar style */
+.navbar{
+    background-color:white;
+    padding:0;
+    margin-bottom:0px !important;
+}
+.navbar a{
+    padding:0;
+    color:black;
+    margin-left:15px;
+    font-size:20px;
+    font-weight:600;
+}
+.navbar a:hover{
+    color: var(--color1);
+}
+.navbar .active{
+    color:var(--color2);
+    font-weight:700;
+}
+/* header style */
+
+#header{
+    height:600px;
+    width:100%;
+    position:relative;
+}
+
+#header img{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#header .overlay{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(175, 175, 175, 0.267);
+}
+
+/* service style */
+
+#services{
+    display:flex;
+    background-color:var(--color1);
+    text-align:center;
+    padding:15px;
+}
+
+.service{
+    margin:10px;
+    border-right:2px solid white;
+    padding-right:20px;
+    color:white;
+}
+
+.service3{
+    border-right:none;
+}
+
+/* about style */
+#about{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top:150px;
+    margin-bottom:150px;
+    text-align:center;
+}
+
+#about .about-heading{
+    width:100%;
+    margin-bottom:70px;
+    font-size:40px;
+}
+
+#about>div{
+    width:45%;
+}
+
+#about .about-body img{
+    width:80%;
+}
+
+#about .about-body h3{
+    background-color: var(--color1);
+    width:80%;
+    margin:auto;
+    margin-bottom:15px;
+    color:white;
+    padding:5px;
+}
+
+#about .about-head{
+    padding:30px;
+    width:50%;
+}
+
+#about .about-head h3{
+    color:gray;
+    margin-bottom:30px;
+}
+
+/* offers style */
+#offers{
+    text-align:center;
+    background:var(--color3);
+    padding:20px;
+    padding-top:40px;
+    color:white;
+}
+
+#offers .offer-head p{
+    width:40%;
+    margin:auto;
+}
+
+#offers .offer-body{
+    display:flex;
+    margin-top:100px;
+}
+
+.offer{
+    padding:20px;
+}
+.offer span{
+    font-size:80px;
+    color:var(--color1);
+}
+
+/* brands style */
+#brands{
+    background-color: white;
+    text-align:center;  
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+#brands h2{
+    margin-bottom:100px;
+    margin-top:70px;
+}
+
+.brands-container{
+    column-count: 4;
+}
+
+.brand{
+    width:100%;
+    height:150px;
+}
+
+.brand img{
+    width:100%;
+    height:100%;
+}
+
+/* contact style */
+#contact-flex{
+    display:flex;
+    background-color:var(--color1);
+    text-align:center;
+    padding:30px;
+    justify-content: space-around;
+}
+
+#contact-flex .contact-item{
+    margin:10px;
+    border-right:2px solid white;
+    padding-right:20px;
+    color:white;
+}
+
+#contact-flex .contact-item3{
+    border-right:none;
+}
+
+#contact-flex h3 span{
+margin-right:10px;
+font-size:35px;
+}
+
+
+/* footer styling */
+
+
+footer{
+    width:100%;
+    height:220px;
+    padding-top:20px;
+    display: flex;
+}
+
+footer>div{
+    width:30%;
+    padding:30px;
+}
+
+footer a{
+    font-size:15px;
+    color:rgb(206, 202, 202);
+    margin-bottom:17px;
+}
+
+.footer-nav{
+margin-left:30px;
+}
+
+.footer-nav ul{
+    list-style: none;
+}
+
+footer .span1{
+    margin-right:15px;
+    font-size:20px
+}
+
+.footer-nav a{
+    margin-right:20px;
+}
+footer a:hover{
+    text-decoration:none;
+    color:var(--color2);
+}
+
+footer .copy{
+    color:gray;
+    font-size:12px;
+}
+
+footer .footer-input input{
+    display: inline-block;
+    width:60%;
+}
+
+
+footer .footer-input input:focus{
+    border-color: rgba(184, 78, 78, 0.562);
+    box-shadow: 0 0 0 0.2rem rgba(161, 65, 65, 0.404);
+}
+
+@media (max-width: 992px){
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+    }
+    }
+
+@media (max-width: 810px) {
+    #services h3{
+        font-size:20px;
+    }
+    #services p{
+        font-size:13px;
+    }
+    #about h3{
+        font-size:25px;
+    }
+    #about p{
+        font-size:13px;
+    }
+    #about .about-body img{
+        width:100%;
+    }
+    #about .about-body h3{
+        width:100%;
+    }
+    #offers h2{
+        font-size:25px;
+    }
+    #offers p{
+        font-size:11px;
+    }
+    #offers .offer-head p{
+        width:70%
+    }
+    #offers h4{
+        font-size:20px;
+    }
+   .brands-container{
+       column-count: 2;
+   }
+   .brand{
+       margin:15px;
+       height:150px;
+   }
+   .brand img{
+       margin:15px;
+       height:150px;
+   }
+   footer a,footer p{
+       font-size:12px;
+      
+   }
+   footer .btn{
+       font-size:11px;
+        padding:5px;
+       margin-top:5px;
+   }
+   footer .copy p{
+       font-size:10px;
+   }
+ }
+
+
+@media (max-width: 576px) {
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0px;
+    }
+    .navbar-expand-lg .navbar-nav a {
+        font-size: 15px;
+        margin-bottom:10px;
+    }
+
+    #services{
+        display:block;
+    }
+   
+.service{
+    border-right:none;
+    border-bottom:2px solid white;
+    padding-bottom:20px;
+}
+
+.service3{
+    border-bottom:none;
+    border-right:none;
+}
+#about{
+    display:block;
+}
+#about .about-head{
+    width:100%;
+}
+#about .about-body{
+    width:100%;
+}
+#offers .offer-head p{
+    width:100%
+}
+#offers .offer-body{
+    display:block;
+}
+.brands-container{
+    column-count: 1;
+}
+.brand{
+    width:90%;
+}
+.brands-container img{
+    width:85%;
+    margin:20px 0 ;
+}
+#contact-flex{
+    display:block;
+}
+
+.contact-item{
+border-right:none !important;
+border-bottom:2px solid white;
+padding-bottom:20px;
+}
+
+.contact-item3{
+border-bottom:none;
+border-right:none;
+}
+footer{
+    display:block;
+    text-align:center;
+    padding:0;
+    height:240px;
+}
+footer>div{
+    width:100%;
+}
+footer li,footer a,footer .social div{
+    display:inline-block;
+}
+.footer-nav{
+    padding:10px;
+    margin:0;
+}
+footer .span2{
+    display:none;
+}
+.social{
+    padding:0;
+}
+.footer-input{
+    padding:0;
+}
+footer .btn{
+    font-size:14px;
+    padding:7px;
+    margin-top:-5px;
+}
+
+
+
+ }
+
+
+
